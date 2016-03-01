@@ -1,7 +1,7 @@
 bonusesApp.directive('translateSelect', function () {
   return {
     restrict: 'E',
-    templateUrl: '/src/directive/base/select.html',
+    templateUrl: '/bonuses/src/directive/base/select.html',
     controller: [
       '$scope', '$translate', 'localStorageService',
       function ($scope, $translate) {

@@ -1,19 +1,19 @@
 bonusesApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/src/partials/home.html',
+      templateUrl: '/bonuses/src/partials/home.html',
       controller: 'HomeCtrl'
     })
     .when('/rates', {
-      templateUrl: '/src/partials/rates/rates.html',
+      templateUrl: '/bonuses/src/partials/rates/rates.html',
       controller: 'bonusesRatesCtrl'
     })
     .when('/payment', {
-      templateUrl: '/src/partials/payment/payment.html',
+      templateUrl: '/bonuses/src/partials/payment/payment.html',
       controller: 'bonusesPaymentCtrl'
     })
     .when('/contact', {
-      templateUrl: '/src/partials/contact/contact.html',
+      templateUrl: '/bonuses/src/partials/contact/contact.html',
       controller: 'bonusesContactCtrl'
     })
     .otherwise({

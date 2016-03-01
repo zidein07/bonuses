@@ -2,7 +2,7 @@ bonusesApp.directive('wallParserInfo', function (vkFetchDataService, parseAndVal
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: '/src/partials/wall-parser/wall-parser-info.html',
+    templateUrl: '/bonuses/src/partials/wall-parser/wall-parser-info.html',
     scope: {
       link: '=',
       params: '='
