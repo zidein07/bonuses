@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-xs-4">
+        <table class="table table-bordered">
+            <thead>
+            <tr class="active">
+                <th>{{ 'COUNT_BOUNCES' | translate }}</th>
+                <th>{{ 'PRICE_BOUNCES' | translate }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="success">
+                <td>{{ 150000 | accounting}}</td>
+                <td>30 копеек</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bon_app_form col-xs-8">
+        <div class="bon_app_form_input input-group input-group-lg">
+        <span class="input-group-addon"
+              id="sizing-addon3">+7</span>
+            <input type="text"
+                   class="form-control"
+                   placeholder="{{ 'NUMBER_PHONE' | translate }}"
+                   aria-describedby="sizing-addon3">
+        </div>
+        <div class="bon_app_form_input input-group-lg">
+            <input type="text"
+                   class="form-control"
+                   placeholder="{{ 'COUNT_BOUNCE' | translate }}"
+                   aria-describedby="sizing-addon3">
+        </div>
+        <div class="bon_app_form_input input-group-lg">
+            <input type="text"
+                   class="form-control"
+                   placeholder="{{ 'COUNT_ROUBLES' | translate }}"
+                   aria-describedby="sizing-addon3">
+        </div>
+    </div>
+
+    <div class="text-center clearfix">
+        <button ng-class="{'disabled': allInputIsNotFull}" class="btn btn-primary">Перейти к оплате</button>
+    </div>
+</div>
